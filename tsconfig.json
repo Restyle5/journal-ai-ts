@@ -31,6 +31,9 @@
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true // optional but recommended
+    "forceConsistentCasingInFileNames": true, // optional but recommended
+
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
   }
 }

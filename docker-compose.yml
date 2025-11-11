@@ -8,9 +8,11 @@ services:
       - .env.development  # switch this file based on environment
     depends_on:
       - db
+    # volumes:
+    #   - .:/app
+    #   - /app/node_modules
     volumes:
-      - .:/app
-      - /app/node_modules
+      - .:/app:cached
     command: npm run dev
 
   db:
